@@ -1,0 +1,102 @@
+/* Reset básico de margens e fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: white;
+}
+
+/* Corpo da página com altura total da tela */
+body {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    overflow: hidden; /* Evita rolagem na página inteira, apenas no conteúdo */
+}
+
+/* Barra Lateral */
+.sidebar {
+    width: 250px;
+    background-color: #121212;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    flex: 1;
+    background: linear-gradient(to bottom, #1e3264, #121212); /* Efeito degradê do Spotify */
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.btn-login {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card {
+    background-color: #181818;
+    padding: 15px;
+    border-radius: 8px;
+    width: 150px;
+    margin-top: 15px;
+}
+
+.capa-album {
+    width: 100%;
+    height: 120px;
+    background-color: #282828;
+    margin-bottom: 10px;
+}
+
+/* Player Fixo no Rodapé */
+.player {
+    height: 90px;
+    background-color: #181818;
+    border-top: 1px solid #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.btn-play {
+    font-size: 2rem;
+  }
